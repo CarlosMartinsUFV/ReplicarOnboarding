@@ -1,0 +1,94 @@
+/* tabela */
+
+.pesquisarEmpresa {
+  min-width: 250px;
+  margin-top: 10px;
+  border: 2px transparent white;
+  padding: 5px;
+  border-radius: 4px;
+  background: white;
+  font-size: 1.2rem;
+}
+
+.inputPesquisar:focus {
+  outline: none;
+  border-bottom: 2px solid rgb(28, 190, 41);
+}
+
+.filtro:focus,
+.status:focus {
+  outline: none;
+  box-shadow: 0 0 0px 1px rgb(28, 190, 41);
+  transition: 0.2s;
+}
+
+.buttonFiltrar:hover {
+  background-color: rgb(33, 226, 65);
+}
+
+#table {
+  height: 350px;
+}
+
+/* tr:nth-child(even) {
+  background-color: rgb(64, 153, 9);
+} */
+
+.row {
+  font-weight: bolder;
+}
+
+#head1 {
+  min-width: 120px;
+}
+#head2 {
+  width: 350px;
+}
+#head3 {
+  min-width: 140px;
+}
+#head4 {
+  min-width: 150px;
+}
+#head5 {
+  min-width: 140px;
+}
+#head6 {
+  min-width: 140px;
+}
+
+#head7 {
+  min-width: 170px;
+}
+#head8 {
+  min-width: 120px;
+}
+
+.iconesTable {
+  border: none;
+  color: white;
+  padding: 8px;
+  border-radius: 50%;
+  margin: 2px;
+  cursor: pointer;
+}
+.paginas {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.pagina,
+.paginaAtual {
+  border: none;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+@media (max-width: 1100px) {
+  .containerPrincipal {
+    margin-left: 5rem;
+  }
+}

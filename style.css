@@ -1,0 +1,13 @@
+@import "./global.css";
+
+/* header */
+@import "./css/header.css";
+
+/* Home */
+@import "./css/mainInput.css";
+@import "./css/tableHome.css";
+
+/* CNAES */
+
+@import "./cnaesPage/css/cnaes&Modal.css";
+@import "./cnaesPage/css/tableCNAES.css";

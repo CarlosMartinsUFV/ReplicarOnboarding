@@ -1,0 +1,56 @@
+.navHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 20px;
+}
+.navHeader img {
+  scale: 1.2;
+  width: 120px;
+  height: 90px;
+  object-fit: cover;
+  object-position: 5px -15px;
+}
+
+.listaItems {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 30px;
+  font-size: 1.2rem;
+}
+
+.sair {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.listaItems li:hover,
+.sair:hover {
+  scale: 1.06;
+  color: rgb(83, 131, 12);
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+#item1Li {
+  font-size: 1.7rem;
+  margin-right: 5px;
+  font-weight: bolder;
+}
+
+#item1Li:hover {
+  scale: 1;
+}
+
+.traco::before {
+  content: "";
+  width: 1px;
+  height: 100%;
+  font-size: 1.5rem;
+  border-left: 1px solid rgb(158, 156, 156);
+}

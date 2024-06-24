@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CNAES</title>
+  <link href="../fontawesome/css/all.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="../style.css">
+
+
+</head>
+
+<body>
+
+  <header class="content">
+    <nav class="navHeader">
+      <ul class="listaItems">
+        <img src="../imgs/brand.svg" alt="">
+        <li id="item1Li">
+          <a href="../index.html">Onboarding</a>
+        </li>
+        <div class="traco"> </div>
+        <li><a href="./cnaes.html">CNAES</a> </li>
+        <li>Sugestão de Nome</li>
+        <li>Grupos</li>
+        <li>Atividades</li>
+      </ul>
+      <div class="sair">
+        <span>Sair</span><i class="fa-solid fa-arrow-right-from-bracket"></i>
+      </div>
+    </nav>
+  </header>
+
+  <section class="content cnaesConf">
+    <div class="container">
+      <div class="cnaeTitle">
+        <h1>Configurações - Gerenciador de Cnaes
+        </h1>
+      </div>
+      <div class="cnaeManager">
+        <input type="text" placeholder="Pesquisar">
+
+        <button data-modal="abrir">+Adicionar</button>
+      </div>
+    </div>
+  </section>
+  <section class="content table">
+
+    <table id="tableCNAES" class="sortable">
+      <thead role="rowgroup" class='head'>
+        <tr role="row" class="row">
+          <td role='cell' class="theadCell" id='head1CNAES'> Modificado em </td>
+          <td role='cell' class="theadCell" id='head2CNAES'>Código </td>
+          <td role='cell' class="theadCell" id='head3CNAES'>Descrição </td>
+          <td role='cell' class="theadCell" id='head4CNAES'>Ação</td>
+        </tr>
+
+      </thead>
+      <tbody class='bodyTableCNAES'>
+        <tr id='1'>
+          <td class="cell">06/05/2024 15:01</td>
+          <td class="cell">99.999-999</td>
+          <td class="cell"> DESCRICAO DESCRICAO DESCRICAO DESCRICAO DESCRICAO DESCRICAO DESCRICAO DESCRICAO DESCRICAO </td>
+          <td class="cell"> <i data-modal="abrirModalEdicaoCnae" class="text-white fa-solid fa-edit iconeTableModal" style="background:#ffc107; color: white; border-radius: 50%; padding:8px"></td>
+
+        </tr>
+        <tr id='2'>
+          <td class="cell">06/05/2024 15:01</td>
+
+          <td class="cell">91.999-999</td>
+          <td class="cell"> DESCRICAO DESCRICAO DESCRICAO DESCRICAO DESCRICAO DESCRICAO DESCRICAO DESCRICAO DESCRICAO </td>
+          <td class="cell"> <i data-modal="abrirModalEdicaoCnae" class="text-white fa-solid fa-edit iconeTableModal" style="background:#ffc107; color: white; border-radius: 50%; padding:8px"></td>
+
+        </tr>
+
+
+      </tbody>
+    </table>
+    </div>
+  </section>
+  <section class="containerModal" data-modal="container">
+    <div class="modal">
+      <form class="inputsModal">
+        <label for="codigo">Código</label>
+        <input id='codigo' type="text" placeholder="Digite o código">
+        <label for="descricao">Descrição</label>
+        <input id="descricao" type="text" placeholder="Digite o código">
+        <button data-modal="fechar" class="fechar">X</button>
+        <button data-modal="cadastrar" class="buttonCadastro" id='buttonCadastroCnae'>Cadastrar</button>
+      </form>
+  </section>
+  <section class="containerModal" data-modal="containerModalEdicaoCnae">
+    <div class="modal modalEditCnae">
+      <div class="idModal" style="display:none"></div>
+      <form class="inputsModal">
+        <label for="codigoEdicaoCnae">Código</label>
+        <input id='codigoEdicaoCnae' type="text" placeholder="Digite o código">
+        <label for="descricaoEdicaoCnae">Descrição</label>
+        <input id="descricaoEdicaoCnae" type="text" placeholder="Digite o código">
+        <button data-modal="fecharModalEdicaoCnae" class="fechar">X</button>
+        <button data-modal="cadastrarModalEdicaoCnae" class='buttonCadastro' id="buttonCadastroEditCnae">Cadastrar</button>
+      </form>
+  </section>
+  <script type="module" src="/script.js"></script>
+
+</body>
+
+
+
+
+</html>

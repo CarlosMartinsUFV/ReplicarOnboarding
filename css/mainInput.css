@@ -1,0 +1,56 @@
+.sectionInputs {
+  padding: 40px 0 0 40px;
+  overflow-x: hidden;
+}
+
+.inputs {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 50px;
+  align-content: center;
+}
+
+.inputCampo label {
+  font-size: 1.2rem;
+  display: block;
+}
+
+.buttonInput,
+.pesquisarEmpresa {
+  grid-column: 4;
+  justify-self: end;
+}
+
+.buttonInput {
+  padding: 10px 15px 10px 15px;
+  background: rgb(11, 187, 11);
+  font-size: 1.2rem;
+  border: none;
+  font-weight: bolder;
+  border-radius: 8px;
+  margin-top: 2rem;
+  cursor: pointer;
+}
+
+.buttonInput:hover {
+  background: rgb(65, 218, 65);
+  transition: 0.2s;
+}
+
+.pesquisarEmpresa {
+  margin-top: 2.5rem;
+}
+
+@media (max-width: 1150px) {
+  .inputs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 40px;
+  }
+  .buttonInput,
+  .pesquisarEmpresa {
+    grid-column: 2;
+    justify-self: end;
+  }
+}

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="fontawesome/css/all.css" rel="stylesheet">
+  <script src="./libs/sorttable.js"></script>
+
+</head>
+
+
+<body>
+
+  <header class="content">
+    <nav class="navHeader">
+      <ul class="listaItems">
+        <img src="./imgs/brand.svg" alt="">
+        <li id="item1Li">
+          <a href="./">Onboarding</a>
+        </li>
+        <div class="traco"> </div>
+        <li><a href="./cnaesPage/cnaes.html">CNAES</a> </li>
+        <li>Sugestão de Nome</li>
+        <li>Grupos</li>
+        <li>Atividades</li>
+      </ul>
+      <div class="sair">
+        <span>Sair</span><i class="fa-solid fa-arrow-right-from-bracket"></i>
+      </div>
+    </nav>
+  </header>
+
+  <main class="content">
+    <section class="sectionInputs">
+      <div>
+        <h1>Onboarding - Gerenciador de Empresas </h1>
+      </div>
+
+      <div class="inputs">
+        <div class="inputCampo">
+          <label for="responsável"> Responsável</label>
+          <input class="inputPesquisar" id='responsável' type="text" placeholder="Buscar por responsável">
+        </div>
+        <div class="inputCampo">
+          <label for="status">Status</label>
+          <select name="filtroSelectStatus" id="filtroStatus"">
+              <option name=" filtroSelectStatus" value="">Selecione o status</option>
+            <option name="filtroSelectStatus" value="em Cadastro">Em Cadastro</option>
+            <option name="filtroSelectStatus" value="em Onboarding">Em Onboarding</option>
+            <option name="filtroSelectStatus" value="em Abertura">Em abertura manual</option>
+            <option name="filtroSelectStatus" value="finalizado Abertura">Finalizado abertura manual</option>
+            <option name="filtroSelectStatus" value="Finalizado migração">Finalizado migração</option>
+          </select>
+        </div>
+        <div class="inputCampo">
+          <label for="equipe">Equipe responsável</label>
+          <select name="" id=filtroEquipe>
+            <option name="filtroSelectEquipe" value="">Selecione o time responsável</option>
+
+            <option name="filtroSelectEquipe" value="equipe Onboarding">Equipe Onboarding</option>
+            <option name="filtroSelectEquipe" value="equipe Abertura">Equipe abertura</option>
+            <option name="filtroSelectEquipe" value="equipe rpa">Equipe RPA</option>
+            <option name="filtroSelectEquipe" value="finalizado">Finalizado</option>
+          </select>
+        </div>
+        <div class="inputCampo">
+          <label for="tipoOnboarding">Tipo de Onboarding</label>
+          <select name="" id="tipoOnboarding">
+            <option value="">Selecione o time de onboarding</option>
+            <option value="abertura">Abertura</option>
+            <option value="migração">Migração</option>
+
+
+          </select>
+
+        </div>
+        <button id=buttonFiltrar class="buttonInput ">Buscar</button>
+
+        <input class="pesquisarEmpresa" type="text" placeholder="Pesquisar">
+      </div>
+
+    </section>
+  </main>
+
+  <section class="content">
+
+    <table id="table" class="sortable">
+      <thead role="rowgroup" class='head'>
+        <tr role="row" class="row">
+          <td role='cell' class="theadCell" id='head1'>Criado em: </td>
+          <td role='cell' class="theadCell" id='head2'>Nome Jurídico </td>
+          <td role='cell' class="theadCell" id='head3'>Responsável </td>
+          <td role='cell' class="theadCell" id='head4'>Contato</td>
+          <td role='cell' class="theadCell" id='head5'>Status</td>
+          <td role='cell' class="theadCell" id='head6'>Time Responsavel</td>
+          <td role='cell' class="theadCell" id='head7'>Tipo de Onboarding</td>
+          <td role='cell' class="theadCell" id='head8'>Ação
+
+          </td>
+
+        </tr>
+
+      </thead>
+      <tbody class='bodyTable'>
+      </tbody>
+    </table>
+    <div class="paginas">
+      <button id='anterior' class="pagina" disabled> A </button>
+      <button id='atual' class="paginaAtual">1 </button>
+      <button id='proxima' class="pagina"> P </button>
+    </div>
+  </section>
+
+
+
+  <script type="module" src="./script.js"></script>
+  <script type="module" src="./CreateRowsTable.js"></script>
+
+</body>
+
+</html>
